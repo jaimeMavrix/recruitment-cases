@@ -4,7 +4,7 @@
 Build a [Single Page Application](https://en.wikipedia.org/wiki/Single-page_application) (SPA) address book using JavaScript, HTML and CSS.
 
 ### Functionality
-1. There shuold be one view here all contacts are listed.
+1. There should be one view where all contacts are listed.
 1. There should be another view to add, delete and edit contacts.
 1. The data should be persisted (on the client), and loaded again when the application starts.
 1. Add fitting validation to the different input fields.
