@@ -10,7 +10,7 @@ In order to be able to complete this test, you will need to have some knowledge 
 Also you will require access to the internet and the following details:
 - url to test: http://qatest.staging.kaboo.com
 - credentials: (kaboo / flappybird)
-- accounts: findbugs 
+- accounts: autosv / autotest1  AND  autouk / autotest1 
 
 As you would have probably seen, there is a file called **kabooPageObject.js** which contains the page object that you will need to use for your implementation. There are different methods and variables, but please feel free to add methods if you require them.
 
@@ -24,4 +24,11 @@ c) Surprise us with you skills with tricks to implement code and find bugs that 
 d) present the results of the tests in any html format (any tool you want) for easy reading
 
 *Scenario 1* - Check that the correct payment methods are displayed for Swedish registered users
+**Given** a swedish register user logs in (autosv)
+**When** clicks on de deposit button (portal/deposit)
+**Then** the deposit methods and its order should be Visa, Neteller, Trustly and Skrill
 
+*Scenario 2* - Check that the correct payment methods are displayed for British registered users
+**Given** a swedish register user logs in (autosv)
+**When** clicks on de deposit button (portal/deposit)
+**Then** the deposit methods and its order should be Visa, Neteller and Skrill
